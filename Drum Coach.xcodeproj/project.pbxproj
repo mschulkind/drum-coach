@@ -1,0 +1,303 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C9F4F32F1655733D0082E3EC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9F4F32E1655733D0082E3EC /* UIKit.framework */; };
+		C9F4F3311655733D0082E3EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9F4F3301655733D0082E3EC /* Foundation.framework */; };
+		C9F4F3331655733D0082E3EC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9F4F3321655733D0082E3EC /* CoreGraphics.framework */; };
+		C9F4F3391655733E0082E3EC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C9F4F3371655733E0082E3EC /* InfoPlist.strings */; };
+		C9F4F33B1655733E0082E3EC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F4F33A1655733E0082E3EC /* main.m */; };
+		C9F4F33F1655733E0082E3EC /* DrumCoachAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F4F33E1655733E0082E3EC /* DrumCoachAppDelegate.m */; };
+		C9F4F3411655733E0082E3EC /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = C9F4F3401655733E0082E3EC /* Default.png */; };
+		C9F4F3431655733E0082E3EC /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9F4F3421655733E0082E3EC /* Default@2x.png */; };
+		C9F4F3451655733E0082E3EC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9F4F3441655733E0082E3EC /* Default-568h@2x.png */; };
+		C9F4F3481655733E0082E3EC /* DrumCoachViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F4F3471655733E0082E3EC /* DrumCoachViewController.m */; };
+		C9F4F34B1655733E0082E3EC /* DrumCoachViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9F4F3491655733E0082E3EC /* DrumCoachViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C9F4F32A1655733D0082E3EC /* Drum Coach.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Drum Coach.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9F4F32E1655733D0082E3EC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C9F4F3301655733D0082E3EC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C9F4F3321655733D0082E3EC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C9F4F3361655733D0082E3EC /* DrumCoach-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "DrumCoach-Info.plist"; sourceTree = "<group>"; };
+		C9F4F3381655733E0082E3EC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C9F4F33A1655733E0082E3EC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = SOURCE_ROOT; };
+		C9F4F33C1655733E0082E3EC /* DrumCoach-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DrumCoach-Prefix.pch"; sourceTree = "<group>"; };
+		C9F4F33D1655733E0082E3EC /* DrumCoachAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrumCoachAppDelegate.h; sourceTree = SOURCE_ROOT; };
+		C9F4F33E1655733E0082E3EC /* DrumCoachAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrumCoachAppDelegate.m; sourceTree = SOURCE_ROOT; };
+		C9F4F3401655733E0082E3EC /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		C9F4F3421655733E0082E3EC /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		C9F4F3441655733E0082E3EC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		C9F4F3461655733E0082E3EC /* DrumCoachViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrumCoachViewController.h; sourceTree = SOURCE_ROOT; };
+		C9F4F3471655733E0082E3EC /* DrumCoachViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrumCoachViewController.m; sourceTree = SOURCE_ROOT; };
+		C9F4F34A1655733E0082E3EC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DrumCoachViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C9F4F3271655733D0082E3EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9F4F32F1655733D0082E3EC /* UIKit.framework in Frameworks */,
+				C9F4F3311655733D0082E3EC /* Foundation.framework in Frameworks */,
+				C9F4F3331655733D0082E3EC /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C9F4F31F1655733D0082E3EC = {
+			isa = PBXGroup;
+			children = (
+				C9F4F3341655733D0082E3EC /* Drum Coach */,
+				C9F4F32D1655733D0082E3EC /* Frameworks */,
+				C9F4F32B1655733D0082E3EC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C9F4F32B1655733D0082E3EC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C9F4F32A1655733D0082E3EC /* Drum Coach.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C9F4F32D1655733D0082E3EC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C9F4F32E1655733D0082E3EC /* UIKit.framework */,
+				C9F4F3301655733D0082E3EC /* Foundation.framework */,
+				C9F4F3321655733D0082E3EC /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C9F4F3341655733D0082E3EC /* Drum Coach */ = {
+			isa = PBXGroup;
+			children = (
+				C9F4F33D1655733E0082E3EC /* DrumCoachAppDelegate.h */,
+				C9F4F33E1655733E0082E3EC /* DrumCoachAppDelegate.m */,
+				C9F4F3461655733E0082E3EC /* DrumCoachViewController.h */,
+				C9F4F3471655733E0082E3EC /* DrumCoachViewController.m */,
+				C9F4F3491655733E0082E3EC /* DrumCoachViewController.xib */,
+				C9F4F3351655733D0082E3EC /* Supporting Files */,
+			);
+			name = "Drum Coach";
+			sourceTree = SOURCE_ROOT;
+		};
+		C9F4F3351655733D0082E3EC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C9F4F3361655733D0082E3EC /* DrumCoach-Info.plist */,
+				C9F4F3371655733E0082E3EC /* InfoPlist.strings */,
+				C9F4F33A1655733E0082E3EC /* main.m */,
+				C9F4F33C1655733E0082E3EC /* DrumCoach-Prefix.pch */,
+				C9F4F3401655733E0082E3EC /* Default.png */,
+				C9F4F3421655733E0082E3EC /* Default@2x.png */,
+				C9F4F3441655733E0082E3EC /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C9F4F3291655733D0082E3EC /* Drum Coach */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9F4F34E1655733E0082E3EC /* Build configuration list for PBXNativeTarget "Drum Coach" */;
+			buildPhases = (
+				C9F4F3261655733D0082E3EC /* Sources */,
+				C9F4F3271655733D0082E3EC /* Frameworks */,
+				C9F4F3281655733D0082E3EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Drum Coach";
+			productName = "Drum Coach";
+			productReference = C9F4F32A1655733D0082E3EC /* Drum Coach.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C9F4F3211655733D0082E3EC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = DrumCoach;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Matthew Schulkind";
+			};
+			buildConfigurationList = C9F4F3241655733D0082E3EC /* Build configuration list for PBXProject "Drum Coach" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C9F4F31F1655733D0082E3EC;
+			productRefGroup = C9F4F32B1655733D0082E3EC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C9F4F3291655733D0082E3EC /* Drum Coach */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C9F4F3281655733D0082E3EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9F4F3391655733E0082E3EC /* InfoPlist.strings in Resources */,
+				C9F4F3411655733E0082E3EC /* Default.png in Resources */,
+				C9F4F3431655733E0082E3EC /* Default@2x.png in Resources */,
+				C9F4F3451655733E0082E3EC /* Default-568h@2x.png in Resources */,
+				C9F4F34B1655733E0082E3EC /* DrumCoachViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C9F4F3261655733D0082E3EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9F4F33B1655733E0082E3EC /* main.m in Sources */,
+				C9F4F33F1655733E0082E3EC /* DrumCoachAppDelegate.m in Sources */,
+				C9F4F3481655733E0082E3EC /* DrumCoachViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C9F4F3371655733E0082E3EC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9F4F3381655733E0082E3EC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C9F4F3491655733E0082E3EC /* DrumCoachViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9F4F34A1655733E0082E3EC /* en */,
+			);
+			name = DrumCoachViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C9F4F34C1655733E0082E3EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		C9F4F34D1655733E0082E3EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C9F4F34F1655733E0082E3EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DrumCoach-Prefix.pch";
+				INFOPLIST_FILE = "DrumCoach-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C9F4F3501655733E0082E3EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DrumCoach-Prefix.pch";
+				INFOPLIST_FILE = "DrumCoach-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C9F4F3241655733D0082E3EC /* Build configuration list for PBXProject "Drum Coach" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9F4F34C1655733E0082E3EC /* Debug */,
+				C9F4F34D1655733E0082E3EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9F4F34E1655733E0082E3EC /* Build configuration list for PBXNativeTarget "Drum Coach" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9F4F34F1655733E0082E3EC /* Debug */,
+				C9F4F3501655733E0082E3EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C9F4F3211655733D0082E3EC /* Project object */;
+}
