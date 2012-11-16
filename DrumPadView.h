@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DrumPadView : UIView
+@interface DrumPadView : UIView {
+  NSMutableArray* padActive_;
+}
 
 @end
