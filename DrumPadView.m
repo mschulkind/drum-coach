@@ -119,7 +119,7 @@ UIColor* lightenColor(UIColor* color, float factor) {
 {
   CGContextRef context = UIGraphicsGetCurrentContext();
 
-  CGContextSetFillColorWithColor(context, [UIColor blackColor].CGColor);
+  CGContextSetFillColorWithColor(context, [UIColor whiteColor].CGColor);
   CGContextFillRect(context, self.bounds);
 
   for (int i = 0; i < kNumPads; ++i) {
