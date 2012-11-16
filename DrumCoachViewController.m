@@ -14,10 +14,15 @@
 
 @implementation DrumCoachViewController
 
+- (void)updateTempoValues {
+  tempo_ = (int)floor([tempoSlider_ value]);
+  tempoValueLabel_.text = [NSString stringWithFormat:@"%d", tempo_];
+}
+
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+  [super viewDidLoad];
+  [self updateTempoValues];
 }
 
 - (void)didReceiveMemoryWarning
@@ -33,6 +38,10 @@
 
 - (NSUInteger)supportedInterfaceOrientations {
   return UIInterfaceOrientationMaskLandscape;
+}
+
+- (IBAction)onTempoChange:(UISlider*)sender {
+  [self updateTempoValues];
 }
 
 @end

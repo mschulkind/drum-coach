@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DrumCoachViewController : UIViewController
+@interface DrumCoachViewController : UIViewController {
+  IBOutlet UILabel* tempoValueLabel_;
+  IBOutlet UISlider* tempoSlider_;
+  int tempo_;
+}
 
 @end
