@@ -10,8 +10,12 @@
 
 @interface SamplePlayer : NSObject {
   NSMutableArray* samples_;
+  NSMutableArray* samplePositions_;
   AUGraph graph_;
 }
+
+@property (nonatomic) NSMutableArray* samples;
+@property (nonatomic) NSMutableArray* samplePositions;
 
 - (int)addSample:(NSString*)fileName;
 - (void)triggerSample:(int)sampleID;
