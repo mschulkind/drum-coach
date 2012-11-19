@@ -22,6 +22,8 @@
 		C9F4F35E165589FD0082E3EC /* DrumPadView.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F4F35D165589FD0082E3EC /* DrumPadView.m */; };
 		C9F4F361165705940082E3EC /* Sample.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F4F360165705940082E3EC /* Sample.m */; };
 		C9F4F364165706010082E3EC /* SamplePlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F4F363165706010082E3EC /* SamplePlayer.m */; };
+		C9F4F3681659DD2E0082E3EC /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9F4F3671659DD2E0082E3EC /* AudioToolbox.framework */; };
+		C9F4F36A1659E0890082E3EC /* Samples in Resources */ = {isa = PBXBuildFile; fileRef = C9F4F3691659E0890082E3EC /* Samples */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +51,8 @@
 		C9F4F360165705940082E3EC /* Sample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sample.m; sourceTree = "<group>"; };
 		C9F4F362165706010082E3EC /* SamplePlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SamplePlayer.h; sourceTree = "<group>"; };
 		C9F4F363165706010082E3EC /* SamplePlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SamplePlayer.m; sourceTree = "<group>"; };
+		C9F4F3671659DD2E0082E3EC /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		C9F4F3691659E0890082E3EC /* Samples */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Samples; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9F4F3681659DD2E0082E3EC /* AudioToolbox.framework in Frameworks */,
 				C9F4F32F1655733D0082E3EC /* UIKit.framework in Frameworks */,
 				C9F4F3311655733D0082E3EC /* Foundation.framework in Frameworks */,
 				C9F4F3331655733D0082E3EC /* CoreGraphics.framework in Frameworks */,
@@ -68,7 +73,9 @@
 		C9F4F31F1655733D0082E3EC = {
 			isa = PBXGroup;
 			children = (
+				C9F4F3671659DD2E0082E3EC /* AudioToolbox.framework */,
 				C9F4F3341655733D0082E3EC /* Drum Coach */,
+				C9F4F3691659E0890082E3EC /* Samples */,
 				C9F4F32D1655733D0082E3EC /* Frameworks */,
 				C9F4F32B1655733D0082E3EC /* Products */,
 			);
@@ -184,6 +191,7 @@
 				C9F4F3431655733E0082E3EC /* Default@2x.png in Resources */,
 				C9F4F3451655733E0082E3EC /* Default-568h@2x.png in Resources */,
 				C9F4F34B1655733E0082E3EC /* DrumCoachViewController.xib in Resources */,
+				C9F4F36A1659E0890082E3EC /* Samples in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +291,7 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DrumCoach-Prefix.pch";
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				INFOPLIST_FILE = "DrumCoach-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -294,6 +303,7 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DrumCoach-Prefix.pch";
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				INFOPLIST_FILE = "DrumCoach-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;

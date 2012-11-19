@@ -25,6 +25,30 @@
   [super viewDidLoad];
   [self updateTempoValues];
 
+  // Initialize the audio session.
+  OSStatus status;
+  status = AudioSessionInitialize(NULL, NULL, NULL, NULL);
+  assert(!status);
+  UInt32 audioCategory = kAudioSessionCategory_MediaPlayback;
+  status = AudioSessionSetProperty(
+      kAudioSessionProperty_AudioCategory, 
+      sizeof(audioCategory), &audioCategory);
+  assert(!status);
+
+  Float32 preferredBufferDuration = 0.001;
+  AudioSessionSetProperty(
+      kAudioSessionProperty_PreferredHardwareIOBufferDuration,
+      sizeof(preferredBufferDuration), &preferredBufferDuration);
+
+  Float64 preferredSampleRate = 44100.0;
+  AudioSessionSetProperty(
+      kAudioSessionProperty_PreferredHardwareSampleRate,
+      sizeof(preferredSampleRate), &preferredSampleRate);
+
+  status = AudioSessionSetActive(true);
+  assert(!status);
+
+  // Load up the sample player.
   samplePlayer_ = [[SamplePlayer alloc] init];
   drumSampleIDs_[0] = [samplePlayer_ addSample:@"hihat_foot.wav"];
   drumSampleIDs_[1] = [samplePlayer_ addSample:@"kick.wav"];

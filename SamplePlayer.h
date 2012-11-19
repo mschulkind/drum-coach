@@ -9,7 +9,8 @@
 #import <Foundation/Foundation.h>
 
 @interface SamplePlayer : NSObject {
-  int nextSampleID_;
+  NSMutableArray* samples_;
+  AUGraph graph_;
 }
 
 - (int)addSample:(NSString*)fileName;

@@ -8,6 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Sample : NSObject
+@interface Sample : NSObject {
+  SInt64 frameCount_;
+}
+
+- (id)initWithFileName:(NSString*)fileName;
++ (Sample*)sampleWithFileName:(NSString*)fileName;
 
 @end
