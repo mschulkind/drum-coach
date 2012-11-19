@@ -8,8 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol DrumPadDelegate
+- (void)drumPadTriggered:(int)index;
+@end
+
 @interface DrumPadView : UIView {
   NSMutableArray* padActive_;
+  id<DrumPadDelegate> delegate_;
 }
+
+@property (nonatomic) id<DrumPadDelegate> delegate;
 
 @end

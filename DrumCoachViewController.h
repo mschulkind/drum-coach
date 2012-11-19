@@ -7,11 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DrumPadView.h"
+#import "SamplePlayer.h"
 
-@interface DrumCoachViewController : UIViewController {
+@interface DrumCoachViewController : UIViewController <DrumPadDelegate> {
   IBOutlet UILabel* tempoValueLabel_;
   IBOutlet UISlider* tempoSlider_;
+  IBOutlet DrumPadView* drumPadView_;
   int tempo_;
+  SamplePlayer* samplePlayer_;
+  int drumSampleIDs_[4];
 }
 
 @end

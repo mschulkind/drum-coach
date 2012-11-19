@@ -20,6 +20,8 @@
 		C9F4F34B1655733E0082E3EC /* DrumCoachViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9F4F3491655733E0082E3EC /* DrumCoachViewController.xib */; };
 		C9F4F358165577A30082E3EC /* DrumPatternView.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F4F357165577A30082E3EC /* DrumPatternView.m */; };
 		C9F4F35E165589FD0082E3EC /* DrumPadView.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F4F35D165589FD0082E3EC /* DrumPadView.m */; };
+		C9F4F361165705940082E3EC /* Sample.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F4F360165705940082E3EC /* Sample.m */; };
+		C9F4F364165706010082E3EC /* SamplePlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F4F363165706010082E3EC /* SamplePlayer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +45,10 @@
 		C9F4F357165577A30082E3EC /* DrumPatternView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrumPatternView.m; sourceTree = "<group>"; };
 		C9F4F35C165589FD0082E3EC /* DrumPadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrumPadView.h; sourceTree = "<group>"; };
 		C9F4F35D165589FD0082E3EC /* DrumPadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrumPadView.m; sourceTree = "<group>"; };
+		C9F4F35F165705940082E3EC /* Sample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sample.h; sourceTree = "<group>"; };
+		C9F4F360165705940082E3EC /* Sample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sample.m; sourceTree = "<group>"; };
+		C9F4F362165706010082E3EC /* SamplePlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SamplePlayer.h; sourceTree = "<group>"; };
+		C9F4F363165706010082E3EC /* SamplePlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SamplePlayer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +104,10 @@
 				C9F4F3461655733E0082E3EC /* DrumCoachViewController.h */,
 				C9F4F3471655733E0082E3EC /* DrumCoachViewController.m */,
 				C9F4F3491655733E0082E3EC /* DrumCoachViewController.xib */,
+				C9F4F35F165705940082E3EC /* Sample.h */,
+				C9F4F360165705940082E3EC /* Sample.m */,
+				C9F4F362165706010082E3EC /* SamplePlayer.h */,
+				C9F4F363165706010082E3EC /* SamplePlayer.m */,
 				C9F4F3351655733D0082E3EC /* Supporting Files */,
 			);
 			name = "Drum Coach";
@@ -189,6 +199,8 @@
 				C9F4F3481655733E0082E3EC /* DrumCoachViewController.m in Sources */,
 				C9F4F358165577A30082E3EC /* DrumPatternView.m in Sources */,
 				C9F4F35E165589FD0082E3EC /* DrumPadView.m in Sources */,
+				C9F4F361165705940082E3EC /* Sample.m in Sources */,
+				C9F4F364165706010082E3EC /* SamplePlayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

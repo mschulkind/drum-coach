@@ -34,6 +34,8 @@ UIColor* lightenColor(UIColor* color, float factor) {
 
 @implementation DrumPadView
 
+@synthesize delegate = delegate_;
+
 - (CGSize)padSize {
   return CGSizeMake(self.bounds.size.height, self.bounds.size.height);
 }
@@ -76,6 +78,8 @@ UIColor* lightenColor(UIColor* color, float factor) {
     }
 
     self.multipleTouchEnabled = YES;
+
+    delegate_ = nil;
   }
   return self;
 }
@@ -96,8 +100,9 @@ UIColor* lightenColor(UIColor* color, float factor) {
       }
     }];
 
-    // Only redraw the pad if the active state changed.
     if (padHit) {
+      [delegate_ drumPadTriggered:i];
+
       [self setPad:i asActive:YES];
       [self setNeedsDisplayInRect:padRect];
       dispatch_after(

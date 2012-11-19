@@ -7,6 +7,7 @@
 //
 
 #import "DrumCoachViewController.h"
+#import "SamplePlayer.h"
 
 @interface DrumCoachViewController ()
 
@@ -23,6 +24,14 @@
 {
   [super viewDidLoad];
   [self updateTempoValues];
+
+  samplePlayer_ = [[SamplePlayer alloc] init];
+  drumSampleIDs_[0] = [samplePlayer_ addSample:@"hihat_foot.wav"];
+  drumSampleIDs_[1] = [samplePlayer_ addSample:@"kick.wav"];
+  drumSampleIDs_[2] = [samplePlayer_ addSample:@"snare.wav"];
+  drumSampleIDs_[3] = [samplePlayer_ addSample:@"ride.wav"];
+
+  drumPadView_.delegate = self;
 }
 
 - (void)didReceiveMemoryWarning
@@ -42,6 +51,10 @@
 
 - (IBAction)onTempoChange:(UISlider*)sender {
   [self updateTempoValues];
+}
+
+- (void)drumPadTriggered:(int)index {
+  [samplePlayer_ triggerSample:drumSampleIDs_[index]];
 }
 
 @end
